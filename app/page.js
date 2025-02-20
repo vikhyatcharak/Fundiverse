@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Separation from "@/components/Separation";
 
 export default function Home() {

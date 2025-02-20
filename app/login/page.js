@@ -1,7 +1,22 @@
-import React from 'react'
+"use client"
+import React,{useEffect} from 'react'
+import { useSession, signIn, signOut } from "next-auth/react"
+import { useRouter } from 'next/navigation'
 
 const page = () => {
+    const { data: session,status } = useSession()
+    const router=useRouter()
+
+    useEffect(() => {
+        if (status === "authenticated") {
+            router.push('/dashboard');
+        }
+    }, [status, router])
+
+    if (status === "loading") return <p>Loading...</p>; 
+
     return (
+        
         <>
             <div className="p-8 flex flex-col gap-5 items-center">
                 <h1 className="text-3xl font-bold"><span>LogIn to get your fans to support you</span></h1>
@@ -81,7 +96,7 @@ const page = () => {
 
                         <span>Continue with Facebook</span>
                     </button>
-                    <button
+                    <button onClick={()=>{signIn("github")}}
                         className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium  hover:bg-violet-800">
                         <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 73 73" version="1.1">
