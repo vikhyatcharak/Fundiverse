@@ -16,7 +16,7 @@ const Navbar = () => {
                     <div className=" relative buttons flex justify-center items-center gap-3">
 
                         <button onBlur={()=>{setTimeout(() => {setShowdropdown(false)}, 300);}} onClick={()=>setShowdropdown(!showdropdown)} id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className="flex gap-1 justify-center items-center text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl font-medium rounded-2xl px-5 py-2.5 text-center" type="button">
-                            <p>Welcome {session.user.email}</p>
+                            <p>Welcome {session.user.name}</p>
                              <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                             </svg>
@@ -27,7 +27,7 @@ const Navbar = () => {
                                     <Link href="/dashboard" className="block px-4 py-2 hover:bg-blue-800">Dashboard</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="block px-4 py-2 hover:bg-blue-800">Your Page</Link>
+                                    <Link href={`/${session.user.name}`} className="block px-4 py-2 hover:bg-blue-800">Your Page</Link>
                                 </li>
                                 <li>
                                     <Link href="#" onClick={()=>signOut()} className="block px-4 py-2 hover:bg-blue-800">Sign out</Link>
