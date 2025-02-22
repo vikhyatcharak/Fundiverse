@@ -8,6 +8,7 @@ const page = () => {
     const router=useRouter()
 
     useEffect(() => {
+        document.title="LogIn - Fundiverse"
         if (status === "authenticated") {
             router.push('/dashboard');
         }

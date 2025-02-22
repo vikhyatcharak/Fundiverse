@@ -14,6 +14,7 @@ const page = () => {
     const router=useRouter()
 
     useEffect(() => {
+        document.title=`Dashboard - ${session?.user?.name}`
         if (status === "unauthenticated") {
             router.push("/login");
         }
