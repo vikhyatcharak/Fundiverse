@@ -18,11 +18,11 @@ const page = () => {
     return (
         
         <>
-            <div className="p-8 flex flex-col gap-5 items-center">
-                <h1 className="text-3xl font-bold"><span>LogIn to get your fans to support you</span></h1>
+            <div className="sm:py-8 px-2 py-8 text-center flex flex-col gap-5 items-center">
+                <h1 className="sm:text-3xl text-xl font-bold"><span>LogIn to get your fans to support you</span></h1>
                 <div className="flex flex-col gap-2 p-10">
                     <button
-                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium  hover:bg-violet-800">
+                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs sm:px-6 py-2 px-2 text-sm font-medium  hover:bg-violet-800">
                         <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                             viewBox="-0.5 0 48 48" version="1.1">
 
@@ -48,7 +48,7 @@ const page = () => {
                         <span>Continue with Google</span>
                     </button>
                     <button
-                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium  hover:bg-violet-800">
+                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs sm:px-6 py-2 px-2 text-sm font-medium  hover:bg-violet-800">
                         <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                             viewBox="0 -2 44 44" version="1.1">
                             <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -63,7 +63,7 @@ const page = () => {
                         </svg> <span>Continue with LinkedIn</span>
                     </button>
                     <button
-                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium  hover:bg-violet-800">
+                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs sm:px-6 py-2 px-2 text-sm font-medium  hover:bg-violet-800">
                         <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                             viewBox="0 -4 48 48" version="1.1">
                             <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -80,7 +80,7 @@ const page = () => {
                         <span>Continue with Twitter</span>
                     </button>
                     <button
-                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium  hover:bg-violet-800">
+                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs sm:px-6 py-2 px-2 text-sm font-medium  hover:bg-violet-800">
                         <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 48 48" version="1.1">
                             <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -97,7 +97,7 @@ const page = () => {
                         <span>Continue with Facebook</span>
                     </button>
                     <button onClick={()=>{signIn("github")}}
-                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium  hover:bg-violet-800">
+                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs sm:px-6 py-2 px-2 text-sm font-medium  hover:bg-violet-800">
                         <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 73 73" version="1.1">
                             <g id="team-collaboration/version-control/github" stroke="none" strokeWidth="1" fill="none"
@@ -119,7 +119,7 @@ const page = () => {
                         <span>Continue with Github</span>
                     </button>
                     <button
-                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium  hover:bg-violet-800">
+                        className="flex items-center border-2 border-blue-950 rounded-lg shadow-md max-w-xs sm:px-6 py-2 px-2 text-sm font-medium  hover:bg-violet-800">
                         <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                             viewBox="-1.5 0 20 20" version="1.1">
                             <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">

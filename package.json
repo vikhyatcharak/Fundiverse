@@ -12,8 +12,10 @@
     "mongoose": "^8.10.1",
     "next": "15.1.7",
     "next-auth": "^4.24.11",
+    "razorpay": "^2.9.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-toastify": "^11.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
